@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Auction Details</title>
+</head>
+<body>
+    <h1 th:text="${auctionItem.title}"></h1>
+    <p th:text="${auctionItem.description}"></p>
+    <p>Starting Price: $<span th:text="${auctionItem.startingPrice}"></span></p>
+    <p>Reserve Price: $<span th:text="${auctionItem.reservePrice}"></span></p>
+    <p>Buy Now Price: $<span th:text="${auctionItem.buyNowPrice}"></span></p>
+</body>
+</html>

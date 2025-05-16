@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Auction List</title>
+</head>
+<body>
+    <h1>All Auctions</h1>
+    <ul>
+        <li th:each="auction : ${auctionItems}">
+            <a th:href="@{/auctions/{id}(id=${auction.id})}" th:text="${auction.title}"></a>
+        </li>
+    </ul>
+</body>
+</html>
